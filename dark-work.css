@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Space+Grotesk:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+body {
+    margin: 15px;
+    background-color: #040404; /* Dark background for night mode */
+    color: #fff; /* Light text color */
+}
+
+.topnav {
+    background-color: #131313; /* Dark background for topnav */
+    border-radius: 50px;
+    margin: 0 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.topnav .topnav-left {
+    display: flex;
+    align-items: center;
+}
+
+.topnav .topnav-left img {
+    padding: 2px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.topnav .topnav-left span {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.topnav .topnav-right {
+    display: flex;
+    justify-content: right; /* Center-align the links */
+    align-items: center;
+    flex-grow: 1; /* Allow the links to grow and fill the space */
+}
+
+.topnav .topnav-right a {
+    color: #fff; /* Light text color */
+    text-decoration: none;
+    padding: 0 20px; /* Adjust the padding for spacing */
+    line-height: 20px;
+}
+/* Sidebar styles */
+.sidebar {
+    width: 325px;
+    position: absolute;
+    top: 100px;
+    bottom: 45px;
+    margin-left: 45px;
+    background-color: #131313; /* Dark background for sidebar */
+    color: #fff; /* Light text color */
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+.sidebar a {
+    padding-top: 10px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #fff; /* Light text color */
+    display: block;
+    font-size: larger;
+}
+
+/* Main content area */
+.content {
+    left: 410px;
+    position: absolute;
+    background-color: #131313; /* Dark background for content */
+    top: 100px;
+    bottom: 45px;
+    right: 60px; /* Align with the right edge of topnav */
+    border-radius: 25px;
+    padding: 10px;
+    color: #fff; /* Light text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.sidebar-item {
+    border-left: 4px solid #131313;
+    border-bottom: 0.5px solid #6665652a; /* Add a faint line at the bottom */
+    padding-bottom: 80px; /* Add some spacing between items */
+}
+.selected {
+    border-left-color: rgb(0, 122, 255);
+}
+.selected a{
+    color: rgb(0, 122, 255);
+}
+.sidebar-scroll{
+    max-height: 775px;
+    overflow-y: auto;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    width: 0;
+}
+.side-title{
+    font-size: 50px; 
+    padding: 15px; 
+    border-bottom: 0.5px solid #6665652a; /* Add a faint line at the bottom */
+}
